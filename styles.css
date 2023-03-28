@@ -35,7 +35,7 @@ header {
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 50px;
 }
 
 .nav_links li a {
@@ -77,4 +77,17 @@ button:hover {
     margin-left: 200px;
     margin-top: 20px;
     font-size: 35px;
+}
+
+.image-container {
+    position: absolute;
+    bottom: 100px;
+}
+  
+.image-container img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-bottom: 50px;
+    margin-left: 15px;
 }
