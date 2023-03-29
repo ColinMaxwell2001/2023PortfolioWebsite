@@ -3,34 +3,41 @@
 <title>Colin's Portfolio Website</title>
 <link rel="stylesheet" href="styles.css" />
 
-<body>
+<body>        
+    
     <header>
-        <img class="logo" src="images/CookieColinss.png" alt="logo">
+        <div class="logo-container">
+            <img class="logo" src="images/CookieColinss.png" alt="logo">
+        </div>
         <nav>
             <ul class="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="news.asp">Projects</a></li>
-                <li><a href="contact.asp">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="about.asp">Education</a></li>
+                
 
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact Me!</button></a>
     </header>
 
-    <h1 class="intro">Hi, I'm Colin Maxwell</h1>
-    <h2 class="multi_skill">I am a <span class="auto-type"></span></h2>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["Software Developer", "Web Developer", "Student", "Full Stack Developer", "Fast Learning", "admirer of Machine Learning"],
-            typeSpeed: 80, 
-            backSpeed: 80,
-            loop: true
-        })
-    </script>
+    <div class="introduction">
+        <h1 class="intro">Hi, I'm Colin Maxwell</h1>
+        <h2 class="multi_skill">I am a <span class="auto-type"></span></h2>
+    
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".auto-type", {
+                strings: ["Software Developer", "Web Developer", "Student", "Full Stack Developer", "Fast Learning", "admirer of Machine Learning"],
+                typeSpeed: 80, 
+                backSpeed: 80,
+                loop: true
+            })
+        </script>
+    </div>
+    
     
     <div class="image-container">
         <a href="https://www.linkedin.com/in/colin-maxwell-310a03208/">
@@ -39,6 +46,10 @@
         <a>
             <img src="icons/394187_github_icon.png" alt="gitHub">
         </a>
+        <div class="line-container">
+            <hr style="border: none; border-right: 2px solid silver; margin-left: -10px;">
+        </div>
+
     </div>
     
     

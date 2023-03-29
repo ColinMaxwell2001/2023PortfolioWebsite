@@ -5,6 +5,7 @@
     background-color: darkslategray;
 }
 
+
 li, a, button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
@@ -15,17 +16,31 @@ li, a, button {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+
+}
+
+/* body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.logo-container {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .logo {
     cursor: pointer;
     justify-content: flex-start;
-    margin-right: auto;
     max-width: 100px;
     max-height: 100px;
+}
+
+.cta{
+    padding-right: 20px;
 }
 
 .nav_links {
@@ -65,7 +80,7 @@ button:hover {
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
-    margin-left: 100px;
+    margin-left: 200px;
     font-size: 65px;
 }
 
@@ -79,15 +94,61 @@ button:hover {
     font-size: 35px;
 }
 
+
+
 .image-container {
     position: absolute;
-    bottom: 100px;
+    bottom: 10px;
+    margin-left: 15px;
 }
   
+
 .image-container img{
     width: 35px;
     height: 35px;
     display: block;
     margin-bottom: 50px;
-    margin-left: 15px;
+    margin-left: 20px;
+}
+
+.line-container {
+    width: 40px;
+    margin-left: -2px;
+   
+}
+  
+
+.line-container hr {
+    margin-left: -10px; /* Adjust this value as needed */
+    height: 300px;
+    
+}
+
+
+
+
+/*About Page*/
+.column {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    overflow-y: hidden;
+    float: none;
+    width: 40%;
+    min-height: 75%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    color: black;
+    background-color: white;
+}
+
+.card-title {
+    font-weight: bold;
 }
