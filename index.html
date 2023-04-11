@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
-<title>Colin's Portfolio Website</title>
-<link rel="stylesheet" href="styles.css" />
+    <head>
+        <title>Colin's Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 
-<body>        
-    
+    </head>
+
+
+
+<body>
+
     <header>
         <div class="logo-container">
             <img class="logo" src="images/CookieColinss.png" alt="logo">
@@ -16,7 +23,7 @@
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="about.html">About</a></li>
-                
+
 
             </ul>
         </nav>
@@ -26,19 +33,83 @@
     <div class="introduction">
         <h1 class="intro">Hi, I'm Colin Maxwell</h1>
         <h2 class="multi_skill">I am a <span class="auto-type"></span></h2>
-    
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
         <script>
             var typed = new Typed(".auto-type", {
-                strings: ["Software Developer", "Web Developer", "Student", "Full Stack Developer", "Fast Learning", "admirer of Machine Learning"],
-                typeSpeed: 80, 
+                strings: ["Software Developer", "Web Developer", "Student", "Full Stack Developer", "Fast Learner", "admirer of Machine Learning"],
+                typeSpeed: 80,
                 backSpeed: 80,
                 loop: true
             })
         </script>
     </div>
+
+    <!-- Planets -->
+  
+
+
+    <div class="space-container" id="space-container">
+        <script src="app.js"></script>
+        <img src="images/planets/137-1375528_top-earth-clip-art-free-clipart-spot-earth-removebg-preview.png" class="center-image" id="center-image">
     
+       <!---->
+        <img src="images/planets/hdstar4-removebg-preview.png" data-speed="2" class="star-image">
+        <img src="images/planets/hdstar4-removebg-preview.png" data-speed="3" class="star-image">
+        <img src="images/planets/hdstar4-removebg-preview.png" data-speed="-9" class="star-image">
+        <img src="images/planets/hdstar4-removebg-preview.png" data-speed="6" class="star-image">
+        <img src="images/planets/hdstar4-removebg-preview.png" data-speed="-5" class="star-image">
+        
+        
     
+        <img src="images/planets/hdplanet1-removebg-preview.png" data-speed="5" class="surrounding-image" id="surrounding-image">
+        <img src="images/planets/hdplanet2-removebg-preview.png" data-speed="4" class="surrounding-image" id="surrounding-image3">
+        <img src="images/planets/hdplanet3-removebg-preview.png" data-speed="-4" class="surrounding-image" id="surrounding-image4">
+        <img src="images/planets/hdplanet4-removebg-preview.png" data-speed="7" class="surrounding-image" id="surrounding-image5">
+        <img src="images/planets/hdplanet5-removebg-preview.png" data-speed="2" class="surrounding-image" id="surrounding-image6">
+
+        <script>
+            var container = document.getElementById('space-container');
+            var image = document.getElementById('center-image');
+            var image2 = document.getElementById('surrounding-image');
+            var image3 = document.getElementById('surrounding-image3');
+            var image4 = document.getElementById('surrounding-image4');
+            var image5 = document.getElementById('surrounding-image5');
+            var image6 = document.getElementById('surrounding-image6');
+
+            
+            var containerRect = container.getBoundingClientRect();
+    
+            container.addEventListener('mousemove', function(event) {
+            var x = event.clientX - containerRect.left;
+            var y = event.clientY - containerRect.top;
+            var centerX = containerRect.width / 2;
+            var centerY = containerRect.height / 2;
+            var deltaX = x - centerX;
+            var deltaY = y - centerY;
+            var angle = Math.atan2(deltaY, deltaX);
+            var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+    
+            var moveX = Math.cos(angle) * distance / 25;
+            var moveY = Math.sin(angle) * distance / 25;
+    
+            image.style.left = centerX + moveX + 'px';
+            image.style.top = centerY + moveY + 'px';
+            image2.style.left = centerX + moveX + 'px';
+            image2.style.top = centerY + moveY + 'px';
+            image3.style.left = centerX + moveX + 'px';
+            image3.style.top = centerY + moveY + 'px';
+            image4.style.left = centerX + moveX + 'px';
+            image4.style.top = centerY + moveY + 'px';
+            image5.style.left = centerX + moveX + 'px';
+            image5.style.top = centerY + moveY + 'px';
+            image6.style.left = centerX + moveX + 'px';
+            image6.style.top = centerY + moveY + 'px';
+            });
+        </script>
+
+    </div>
+    
+
     <div class="image-container">
         <a href="https://www.linkedin.com/in/colin-maxwell-310a03208/">
             <img src="icons/5282542_linkedin_network_social network_linkedin logo_icon.png" alt="linkedIn">
@@ -51,8 +122,7 @@
         </div>
 
     </div>
-    
-    
+
 
 
 </body>
