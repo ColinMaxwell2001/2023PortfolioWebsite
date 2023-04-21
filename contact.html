@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Colin's Portfolio Website</title>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+    </head>
+<style>
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: darkslategray;
+}
+
+
+li, a, button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.logo-container {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.logo {
+    cursor: pointer;
+    justify-content: flex-start;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.cta{
+    padding-right: 20px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 50px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+
+}
+.nav_links li:hover {
+    transform: scale(1.2);
+
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color:#0088a9;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.image-container {
+    position: fixed;
+    bottom: 10px;
+    margin-left: 15px;
+}
+  
+
+.image-container img{
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.line-container {
+    width: 40px;
+    margin-left: -2px;
+   
+}
+  
+
+.line-container hr {
+    margin-left: -10px; /* Adjust this value as needed */
+    height: 300px;
+    
+}
+
+
+/* Contact Form Styles */
+
+.contact-content-con {
+    display: flex;
+    align-items: center;
+    padding-top: 3.5rem;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .contact-content-con .right-contact {
+    flex: 3;
+    margin-left: 3rem;
+  }
+  .contact-content-con .right-contact .input-control {
+    margin: 1.5rem 0;
+  }
+  .contact-content-con .right-contact .input-control input, .contact-content-con .right-contact .input-control textarea {
+    border-radius: 30px;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0.8rem 1.1rem;
+    outline: none;
+    border: none;
+    background-color: #DAD1B8;
+    width: 100%;
+    color: black;
+    resize: none;
+  }
+  .contact-content-con .right-contact .i-c-2 {
+    display: flex;
+  }
+  .contact-content-con .right-contact .i-c-2 :last-child {
+    margin-left: 1.5rem;
+  }
+  .contact-content-con .right-contact .submit-btn {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  #submitting-btn {
+    background-color: white;
+    width: 25%;
+    border-radius: 12px;
+    color: black;
+    font-weight: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    transition-duration: 0.4s;
+  
+  }
+  
+  #submitting-btn:hover{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .main-title {
+    text-align: center;
+  }
+  .main-title h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(0,136,169,0.8);
+
+  }
+  .main-title h2 span {
+    color: #DAD1B8;
+  }
+  .main-title h2 .bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: var(--color-grey-5);
+    transition: all 0.4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 6.3rem;
+  }
+  
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  
+
+
+
+
+
+</style>
+
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="images/CookieColinss.png" alt="logo">
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="about.html">About</a></li>
+
+
+            </ul>
+        </nav>
+        <a class="cta" href="contact.html"><button>Contact Me!</button></a>
+    </header>
+
+    <div class="image-container">
+        <a href="https://www.linkedin.com/in/colin-maxwell-310a03208/">
+            <img src="icons/5282542_linkedin_network_social network_linkedin logo_icon.png" alt="linkedIn">
+        </a>
+        <a>
+            <img src="icons/394187_github_icon.png" alt="gitHub">
+        </a>
+        <div class="line-container">
+            <hr style="border: none; border-right: 2px solid silver; margin-left: -10px;">
+        </div>
+
+    </div>
+
+    <section class="container contact" id="contact">
+        <div class="contact-container">
+            <div class="main-title">
+                <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+            </div>
+            <div class="contact-content-con">
+              
+                <div class="right-contact">
+                    <form action="https://formsubmit.co/1b15b20360127cb8912da1d396b70ecf" method="POST" class="contact-form">
+                        <div class="input-control i-c-2">
+                            <input type="text" name="name" required placeholder="YOUR NAME">
+                            <input type="email" name="email" required placeholder="YOUR EMAIL">
+                        </div>
+                        <div class="input-control">
+                            <input type="text" name="subject" required placeholder="ENTER SUBJECT">
+                        </div>
+                        <div class="input-control">
+                            <textarea name="message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit" id="submitting-btn">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+
+
+</body>
+
+</html>
